@@ -1,28 +1,20 @@
 import React from 'react';
 import {Image,Text,View,StyleSheet} from 'react-native';
+import Flex from './componnents/Flex';
 
 export default class App extends React.Component {
   render() {
     let text=`
-
-    Naruto Love Sasuke
-    `
+    
+    
+    Naruto Love Sasuke`
     return(
-      <View style={{flex:1,alignItems:"center"}}>
-      {/* Flex View */}
-       <View style={{flex:40,alignItems:"center"}}>
+       <View style={{flex:1,margiTop:50}}>
         <Text style={styles.firstText}>{text}</Text>
         <Image source={{uri:"https://dw9to29mmj727.cloudfront.net/properties/2016/525-SeriesThumb_NARSHP_400x320.jpg"}}
               style={{width:300,height:200}}></Image>
+        <Flex/>
         </View>
-
-      {/* Flex View */}
-        <View style={{flex:60,alignItems:"center"}}>
-        <Text style={styles.firstText}>{text}</Text>
-        <Image source={{uri:"https://dw9to29mmj727.cloudfront.net/properties/2016/525-SeriesThumb_NARSHP_400x320.jpg"}}
-              style={{width:300,height:200}}></Image>
-        </View>
-      </View>
     );
   }
 }
