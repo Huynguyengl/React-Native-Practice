@@ -3,6 +3,7 @@ import {Image,Text,View,StyleSheet} from 'react-native';
 import Flex from './componnents/Flex';
 import Justify from './componnents/Justify';
 import Input from './componnents/TextInput';
+import But from './componnents/Button';
 
 export default class App extends React.Component {
   render() {
@@ -18,7 +19,8 @@ export default class App extends React.Component {
       //  
       //   </View>
       // <Justify/>
-      <Input/>
+      //<Input/>
+      <But/>
     );
   }
 }
