@@ -2,6 +2,7 @@ import React from 'react';
 import {Image,Text,View,StyleSheet} from 'react-native';
 import Flex from './componnents/Flex';
 import Justify from './componnents/Justify';
+import Input from './componnents/TextInput';
 
 export default class App extends React.Component {
   render() {
@@ -16,7 +17,8 @@ export default class App extends React.Component {
       //         style={{width:300,height:200}}></Image>
       //  
       //   </View>
-      <Justify/>
+      // <Justify/>
+      <Input/>
     );
   }
 }
